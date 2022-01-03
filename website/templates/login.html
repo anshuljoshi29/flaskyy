@@ -1,32 +1,41 @@
-{% extends "base.html"  %} {% block title %}login{% endblock %}
-{% block content %}
-<form method ="POST">
-    <h3 align="centre">Login</h3>
-    <div class="form-group">
-        <label for="email">EMAIL Address</label>
-        <input 
-            type="email" 
-            class="form-control" 
-            id="email" 
-            name="email" 
-            placeholder="Enter email"
-        />
-    </div>
-
-    <div class="form-group">
-        <label for="password">Password</label>
-        <input 
-            type="password" 
-            class="form-control" 
-            id="password" 
-            name="passqord" 
-            placeholder="Enter password"
-        />
-    </div>
-    <br/>
-    <button type="submit" class="btn btn-primary">login</button>
-
-
-</form>
-
+{% extends "base.html" %} {% block title %}Login{% endblock %} {% block content
+    %}
+    <body>
+      <div class="background"></div>       
+          <h2>Login Form</h2>
+          <form action="" method="POST">
+  
+              <div class="form-item">
+                  <span class="material-icons-outlined">
+                      account_circle
+                  </span>
+                  <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  placeholder="Enter email"
+                  />
+              </div>
+  
+              <div class="form-item">
+                  <span class="material-icons-outlined">                   
+                      lock
+                  </span>
+                  <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  name="password"
+                  placeholder="Enter password"
+                  />
+              </div>
+  
+              <button type="submit"> LOGIN </button>
+              <p>New User? <a href="/sign-up">Create an account</a></p>
+          </form>
+        
+      </div>
+  
+    </body>
 {% endblock %}
