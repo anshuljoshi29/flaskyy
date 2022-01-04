@@ -70,14 +70,20 @@ input {
 
 span {
     margin: 5px;
-    color: rgb(172, 172, 172);
-    cursor: default;
+    color: rgb(245, 1, 1);
+    cursor: pointer;
     user-select: none;
-    background: rgba(85, 81, 81, 0.637);
+    background: rgb(247, 247, 247);
     padding: 5px;
     border-radius: 15px;
+    border: none;
+    
 }
 
+span:focus{
+    outline:none;
+    border: none;
+}
 button[type="submit"] {
     width: 250px;
     font-size: 20px;
@@ -102,17 +108,17 @@ p:first-of-type {
     flex-wrap: wrap;
     justify-content: center;
 }
-
+/* 
 button {
     padding: 5px 16px;
     font-size: 18px;
     margin: 5px 15px;
     width: 180px;
-    color: white;
     background: transparent;
     cursor: pointer;
     transition: all 0.7s ease;
-}
+}  */
+
 .fb:hover{
     background: rgb(5, 5, 73);
     border: none;
@@ -143,4 +149,3 @@ a:hover{
     }
     
 }
-</style>
